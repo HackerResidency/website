@@ -26,13 +26,9 @@ export function LocationSection() {
         </p>
 
         <p>
-          Beautiful beaches, delicious food, perfect weather, and a vibrant
-          local culture.
-        </p>
-
-        <p>
-          It's the perfect place to lock in and make 6 months of progress on
-          your startup in 6 weeks!
+          Beautiful beaches, delicious food, perfect weather, very affordable,
+          and a vibrant local culture. It's the perfect place to lock in and
+          make 4 months of progress on your startup in 4 weeks!
         </p>
       </h3>
 

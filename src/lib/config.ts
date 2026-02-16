@@ -4,7 +4,8 @@ export const isSafari =
   !isServer && /^((?!chrome|android).)*safari/i.test(navigator.userAgent)
 
 export const title = 'HRG'
-export const description = 'A residency for ambitious indie hackers.'
+export const description =
+  'An experimental residency for ambitious indie hackers.'
 export const domain =
   process.env.NEXT_PUBLIC_VERCEL_PROJECT_PRODUCTION_URL ??
   'hackerresidencygroup.com'

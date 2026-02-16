@@ -55,7 +55,7 @@ function StorySectionIntro() {
       >
         <p>
           We're inviting 10 ambitious founders to come live and build with us
-          for 6 weeks at a dope villa in SE Asia.
+          for 1 month at a dope villa in SE Asia.
         </p>
 
         <p>With one goal: to lock in and build!</p>
@@ -161,7 +161,7 @@ function StorySectionFunding() {
   return (
     <section className='relative flex flex-col gap-12 mb-16'>
       <h2 className='text-center text-balance text-4xl font-semibold leading-normal max-w-3xl'>
-        Demo day + up to $100k in funding 🔥
+        Demo day 🔥
       </h2>
 
       <h3
@@ -173,12 +173,6 @@ function StorySectionFunding() {
           <span className='font-semibold'>demo day</span> +{' '}
           <span className='font-semibold'>livestream</span> including some of
           the best investors from around the world.
-        </p>
-
-        <p>
-          And for the first time ever, we'll be directly offering{' '}
-          <span className='font-semibold'>up to $100k in funding</span> to the
-          top teams.
         </p>
       </h3>
     </section>

@@ -120,7 +120,7 @@ export function HeroSection() {
               scale: { type: 'tween', visualDuration: 0.4 }
             }}
           >
-            April 21st – June 1st, 2026
+            May 1st – May 31st, 2026
           </motion.p>
 
           <motion.div

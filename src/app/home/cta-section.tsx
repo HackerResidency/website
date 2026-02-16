@@ -43,7 +43,7 @@ export function CTASection() {
             scale: { type: 'tween', visualDuration: 0.15 }
           }}
         >
-          Join the waitlist for the next batch coming April 2026 which we'll be
+          Join the waitlist for the next batch coming May 2026 which we'll be
           announcing soon!
         </motion.h3>
 
@@ -60,7 +60,7 @@ export function CTASection() {
             scale: { type: 'tween', visualDuration: 0.15 }
           }}
         >
-          Apply to come live & build with us for 6 weeks!
+          Apply to come live & build with us for the month!
         </motion.h3>
 
         <motion.p
@@ -73,7 +73,7 @@ export function CTASection() {
             scale: { type: 'tween', visualDuration: 0.15 }
           }}
         >
-          April 21st – June 1st, 2026
+          May 1st – May 31st, 2026
         </motion.p>
 
         <HeroButton heroVariant='orange'>
