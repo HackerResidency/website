@@ -34,8 +34,6 @@ export default function TheBestDamnLandingPageEver() {
 
       <StorySectionWhy />
 
-      <StorySectionFunding />
-
       <LocationSection />
 
       <CTASection />
@@ -149,31 +147,6 @@ function StorySectionWhy() {
 
           <p>3. Make friends, vibe, and learn from each other! 🤙</p>
         </div>
-      </h3>
-    </section>
-  )
-}
-
-function StorySectionFunding() {
-  const ref = useRef<HTMLHeadingElement | null>(null)
-  useAnimatedStoryText(ref)
-
-  return (
-    <section className='relative flex flex-col gap-12 mb-16'>
-      <h2 className='text-center text-balance text-4xl font-semibold leading-normal max-w-3xl'>
-        Demo day 🔥
-      </h2>
-
-      <h3
-        ref={ref}
-        className='text-center text-balance text-2xl leading-normal max-w-3xl flex flex-col gap-6'
-      >
-        <p>
-          We cap the batch off with a{' '}
-          <span className='font-semibold'>demo day</span> +{' '}
-          <span className='font-semibold'>livestream</span> including some of
-          the best investors from around the world.
-        </p>
       </h3>
     </section>
   )
