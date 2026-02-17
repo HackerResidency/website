@@ -32,6 +32,10 @@ export function Footer() {
             <ActiveLink href='/faq' className='link'>
               FAQ
             </ActiveLink>
+
+            <ActiveLink href='/sponsors' className='link'>
+              Sponsors
+            </ActiveLink>
           </div>
 
           <div className='flex flex-row justify-end items-center gap-4'>
