@@ -4,9 +4,14 @@ import Link from 'next/link'
 
 import { Card } from '@/components/card'
 import { HeroButton } from '@/components/hero-button'
+import { PeopleGrid } from '@/components/people-grid'
 import { Sponsor } from '@/components/sponsor'
 import { AnimatedGradientBackground } from '@/components/ui/animated-gradient-background'
 import { WorldMap } from '@/components/ui/world-map'
+
+import { hosts } from './hosts'
+import { mentors } from './mentors'
+import { residents } from './residents'
 
 const dots: Array<{
   start: { lat: number; lng: number; label?: string }
@@ -91,42 +96,50 @@ export default function Batch0Page() {
     <>
       <AnimatedGradientBackground />
 
-      <section className='relative z-10 w-full flex flex-col gap-8 max-w-3xl flex-1 justify-center '>
-        <h2 className='text-center text-balance font-semibold text-3xl font-heading'>
-          HRG Batch 1
-        </h2>
+      <section className='relative z-10 w-full flex flex-col gap-16 flex-1 justify-center '>
+        <div className='flex flex-col w-full gap-8 max-w-3xl justify-center'>
+          <h2 className='text-center text-balance font-semibold text-3xl font-heading'>
+            HRG Batch 1
+          </h2>
 
-        <div className='flex flex-col gap-2'>
-          <p className='text-center text-pretty text-md leading-normal'>
-            Da Nang, Vietnam
-          </p>
+          <div className='flex flex-col gap-2'>
+            <p className='text-center text-pretty text-md leading-normal'>
+              Da Nang, Vietnam
+            </p>
 
-          <p className='text-center text-pretty text-sm italic leading-normal'>
-            May 1st – 31st, 2026
-          </p>
+            <p className='text-center text-pretty text-sm italic leading-normal'>
+              May 1st – 31st, 2026
+            </p>
+          </div>
+
+          <Card className='w-full'>
+            <WorldMap dots={dots} />
+          </Card>
+
+          <HeroButton heroVariant='red' className='self-center'>
+            <Link href='/'>stack.pop();</Link>
+          </HeroButton>
         </div>
 
-        <Card className='w-full'>
-          <WorldMap dots={dots} />
-        </Card>
+        <PeopleGrid title='Residents' people={residents} />
 
-        <HeroButton heroVariant='red'>
-          <Link href='/'>stack.pop();</Link>
-        </HeroButton>
+        <PeopleGrid title='Mentors' people={mentors} />
 
-        <SponsorSection />
+        <PeopleGrid title='Hosts' people={hosts} />
 
-        <HeroButton heroVariant='red'>
-          <Link href='/'>stack.pop();</Link>
-        </HeroButton>
+        <SponsorSection>
+          <HeroButton heroVariant='red'>
+            <Link href='/'>stack.pop();</Link>
+          </HeroButton>
+        </SponsorSection>
       </section>
     </>
   )
 }
 
-function SponsorSection() {
+function SponsorSection({ children }: { children?: React.ReactNode }) {
   return (
-    <section className='relative flex flex-col gap-12 py-16 px-4'>
+    <section className='relative flex flex-col gap-12 px-4 w-full max-w-3xl '>
       <h2 className='text-center text-balance text-4xl font-semibold leading-normal max-w-3xl'>
         Sponsors
       </h2>
@@ -166,6 +179,8 @@ function SponsorSection() {
           alt='OpenAI'
         />
       </div>
+
+      {children}
     </section>
   )
 }
