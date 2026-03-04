@@ -1,12 +1,12 @@
 import Link from 'next/link'
 
-import { PeopleGrid, type Person } from '@/components/people-grid'
+import { type Person } from '@/components/people-grid'
 import David from '@/public/people/david.jpg'
 import Phuc from '@/public/people/phuc.jpg'
 import Tony from '@/public/people/tony.jpg'
 import Travis from '@/public/people/travis.jpg'
 
-const people: Person[] = [
+export const hosts: Person[] = [
   {
     name: 'Travis Fischer',
     image: Travis,
@@ -85,7 +85,3 @@ const people: Person[] = [
     )
   }
 ]
-
-export function TeamSection() {
-  return <PeopleGrid title='Led by world-class hackers' people={people} />
-}
