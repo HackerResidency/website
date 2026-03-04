@@ -36,10 +36,6 @@ export function Footer() {
             <ActiveLink href='/batches' className='link'>
               Batches
             </ActiveLink>
-
-            <ActiveLink href='/sponsors' className='link'>
-              Sponsor Info
-            </ActiveLink>
           </div>
 
           <div className='flex flex-row justify-end items-center gap-4'>

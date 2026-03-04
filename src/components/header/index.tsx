@@ -49,7 +49,7 @@ export function Header() {
             FAQ
           </ActiveLink>
 
-          <ActiveLink href='/batches' className='link'>
+          <ActiveLink href='/batches' className='link hidden md:block'>
             Batches
           </ActiveLink>
 
