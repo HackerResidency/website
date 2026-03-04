@@ -1,18 +1,17 @@
 'use client'
 
 import Link from 'next/link'
-import random from 'random'
 
 import { Card } from '@/components/card'
 import { HeroButton } from '@/components/hero-button'
+import { Sponsor } from '@/components/sponsor'
 import { AnimatedGradientBackground } from '@/components/ui/animated-gradient-background'
 import { WorldMap } from '@/components/ui/world-map'
-import { cn } from '@/lib/utils'
 
 const dots: Array<{
   start: { lat: number; lng: number; label?: string }
   end: { lat: number; lng: number; label?: string }
-}> = random.shuffle([
+}> = [
   {
     start: { lat: 40.741_895, lng: -73.989_308 },
     end: { lat: 16.0544, lng: 108.2022 }
@@ -78,7 +77,7 @@ const dots: Array<{
     start: { lat: 6.269_732_4, lng: -75.602_559_7 },
     end: { lat: 16.0544, lng: 108.2022 }
   }
-])
+]
 
 export default function Batch0Page() {
   return (
@@ -121,137 +120,71 @@ function SponsorSection() {
         Sponsors
       </h2>
 
-      <div className='grid grid-cols-1 md:grid-cols-2 max-w-4xl gap-16 dark:hidden'>
+      <div className='grid grid-cols-1 md:grid-cols-2 max-w-4xl gap-16'>
         <Sponsor
           href='https://coderabbit.ai?from=hrg'
           src='/sponsors/coderabbit-light.svg'
+          srcDark='/sponsors/coderabbit-dark.svg'
           alt='CodeRabbit'
         />
 
         <Sponsor
           href=' https://openrouter.ai?referral=hrg'
           src='/sponsors/openrouter-light.svg'
+          srcDark='/sponsors/openrouter-dark.svg'
           alt='OpenRouter'
         />
 
         <Sponsor
           href='https://n8n.io?from=hrg'
           src='/sponsors/n8n-light.svg'
+          srcDark='/sponsors/n8n-dark.svg'
           alt='N8N'
         />
 
         <Sponsor
           href='https://www.datahouse.com?from=hrg'
           src='/sponsors/datahouse-light.png'
+          srcDark='/sponsors/datahouse-dark.png'
           alt='Datahouse'
         />
 
         <Sponsor
           href='https://parallel.ai?from=hrg'
           src='/sponsors/parallel-light.svg'
+          srcDark='/sponsors/parallel-dark.svg'
           alt='Parallel.ai'
         />
 
         <Sponsor
           href='https://stainless.com?from=hrg'
           src='/sponsors/stainless-light.png'
+          srcDark='/sponsors/stainless-dark.png'
           alt='Stainless'
         />
 
         <Sponsor
           href='https://cognition.ai?from=hrg'
           src='/sponsors/cognition-light.svg'
+          srcDark='/sponsors/cognition-dark.png'
           alt='Cognition'
         />
 
         <Sponsor
           href='https://www.createanything.com/?via=HRG'
           src='/sponsors/anything-light.svg'
+          srcDark='/sponsors/anything-dark.svg'
           alt='Anything'
         />
 
         <Sponsor
           href='https://exa.ai?from=hrg'
           src='/sponsors/exa-light.svg'
-          alt='Exa'
-          className='max-h-16'
-        />
-      </div>
-
-      <div className='grid-cols-1 md:grid-cols-2 items-center max-w-4xl gap-16 hidden dark:grid'>
-        <Sponsor
-          href='https://coderabbit.ai?from=hrg'
-          src='/sponsors/coderabbit-dark.svg'
-          alt='CodeRabbit'
-        />
-
-        <Sponsor
-          href=' https://openrouter.ai?referral=hrg'
-          src='/sponsors/openrouter-dark.svg'
-          alt='OpenRouter'
-        />
-
-        <Sponsor
-          href='https://n8n.io?from=hrg'
-          src='/sponsors/n8n-dark.svg'
-          alt='N8N'
-        />
-
-        <Sponsor
-          href='https://www.datahouse.com?from=hrg'
-          src='/sponsors/datahouse-dark.png'
-          alt='Datahouse'
-        />
-
-        <Sponsor
-          href='https://parallel.ai?from=hrg'
-          src='/sponsors/parallel-dark.svg'
-          alt='Parallel.ai'
-        />
-
-        <Sponsor
-          href='https://stainless.com?from=hrg'
-          src='/sponsors/stainless-dark.png'
-          alt='Stainless'
-        />
-
-        <Sponsor
-          href='https://cognition.ai?from=hrg'
-          src='/sponsors/cognition-dark.png'
-          alt='Cognition'
-        />
-
-        <Sponsor
-          href='https://www.createanything.com/?via=HRG'
-          src='/sponsors/anything-dark.svg'
-          alt='Anything'
-        />
-
-        <Sponsor
-          href='https://exa.ai?from=hrg'
-          src='/sponsors/exa-dark.svg'
+          srcDark='/sponsors/exa-dark.svg'
           alt='Exa'
           className='max-h-16'
         />
       </div>
     </section>
-  )
-}
-
-function Sponsor({
-  href,
-  src,
-  alt,
-  className
-}: {
-  href: string
-  src: string
-  alt: string
-  className?: string
-}) {
-  return (
-    <Link href={href} target='_blank'>
-      <img src={src} alt={alt} className={cn('w-full max-h-24', className)} />
-    </Link>
   )
 }

@@ -34,7 +34,7 @@ export function Footer() {
             </ActiveLink>
 
             <ActiveLink href='/sponsors' className='link'>
-              Sponsors
+              Sponsor Info
             </ActiveLink>
           </div>
 

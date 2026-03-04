@@ -1,18 +1,17 @@
 'use client'
 
 import Link from 'next/link'
-import random from 'random'
 
 import { Card } from '@/components/card'
 import { HeroButton } from '@/components/hero-button'
+import { Sponsor } from '@/components/sponsor'
 import { AnimatedGradientBackground } from '@/components/ui/animated-gradient-background'
 import { WorldMap } from '@/components/ui/world-map'
-import { cn } from '@/lib/utils'
 
 const dots: Array<{
   start: { lat: number; lng: number; label?: string }
   end: { lat: number; lng: number; label?: string }
-}> = random.shuffle([
+}> = [
   {
     start: { lat: 40.741_895, lng: -73.989_308 },
     end: { lat: 16.0544, lng: 108.2022 }
@@ -85,7 +84,7 @@ const dots: Array<{
     start: { lat: 34.0522, lng: -118.2437 },
     end: { lat: 16.0544, lng: 108.2022 }
   }
-])
+]
 
 export default function Batch0Page() {
   return (
@@ -146,14 +145,6 @@ function SponsorSection() {
           srcDark='/sponsors/notion-dark.svg'
           alt='Notion'
         />
-
-        <Sponsor
-          href=' https://openai.com?referral=hrg'
-          src='/sponsors/openai-light.png'
-          srcDark='/sponsors/openai-dark.png'
-          alt='OpenAI'
-        />
-
         <Sponsor
           href='https://www.datahouse.com?from=hrg'
           src='/sponsors/datahouse-light.png'
@@ -167,40 +158,14 @@ function SponsorSection() {
           srcDark='/sponsors/stainless-dark.png'
           alt='Stainless'
         />
+
+        <Sponsor
+          href=' https://openai.com?referral=hrg'
+          src='/sponsors/openai-light.png'
+          srcDark='/sponsors/openai-dark.png'
+          alt='OpenAI'
+        />
       </div>
     </section>
-  )
-}
-
-function Sponsor({
-  href,
-  src,
-  srcDark,
-  alt,
-  className
-}: {
-  href: string
-  src: string
-  srcDark: string
-  alt: string
-  className?: string
-}) {
-  return (
-    <Link
-      href={href}
-      target='_blank'
-      className='flex flex-col items-center justify-center'
-    >
-      <img
-        src={src}
-        alt={alt}
-        className={cn('dark:hidden max-w-full max-h-16', className)}
-      />
-      <img
-        src={srcDark}
-        alt={alt}
-        className={cn('hidden dark:block max-w-full max-h-16', className)}
-      />
-    </Link>
   )
 }
