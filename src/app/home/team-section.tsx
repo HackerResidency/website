@@ -30,7 +30,8 @@ const people: Person[] = [
         </Link>
         , Microsoft, and Amazon.
       </>
-    )
+    ),
+    location: 'NY'
   },
   {
     name: 'Tony Dinh',
@@ -51,7 +52,8 @@ const people: Person[] = [
         </Link>
         .
       </>
-    )
+    ),
+    location: 'Vietnam'
   },
   {
     name: 'Minh-Phuc Tran',
@@ -68,7 +70,8 @@ const people: Person[] = [
         </Link>
         .
       </>
-    )
+    ),
+    location: 'Vietnam'
   },
   {
     name: 'David Park',
@@ -82,7 +85,8 @@ const people: Person[] = [
         Built Raya & Kippo and then 120 other apps you&apos;ve never heard of
         because they failed.
       </>
-    )
+    ),
+    location: 'LA'
   }
 ]
 
