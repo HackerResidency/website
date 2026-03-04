@@ -4,84 +4,60 @@ import Link from 'next/link'
 
 import { Card } from '@/components/card'
 import { HeroButton } from '@/components/hero-button'
+import { ImageGallery } from '@/components/image-gallery'
 import { PeopleGrid } from '@/components/people-grid'
 import { Sponsor } from '@/components/sponsor'
 import { AnimatedGradientBackground } from '@/components/ui/animated-gradient-background'
 import { WorldMap } from '@/components/ui/world-map'
+import Vibes1 from '@/public/batch-0/0.jpg'
+import Vibes2 from '@/public/batch-0/1.jpg'
+import Vibes4 from '@/public/batch-0/2.jpg'
+import Vibes3 from '@/public/batch-0/3.jpg'
+import Batch0DemoDay0 from '@/public/batch-0/demo-day-0.jpg'
+import Batch0DemoDay1 from '@/public/batch-0/demo-day-1.jpg'
+import Batch0DemoDay2 from '@/public/batch-0/demo-day-2.jpg'
+import Batch0DemoDay3 from '@/public/batch-0/demo-day-3.jpg'
+import Batch0DemoDay4 from '@/public/batch-0/demo-day-4.jpg'
+import Batch0DemoDay5 from '@/public/batch-0/demo-day-5.jpg'
+import Vibes5 from '@/public/batch-0/group-dinner-hotpot.jpg'
+import Vibes0 from '@/public/batch-0/hrg-crew-nov-14-2025.jpg'
+import Vibes6 from '@/public/batch-0/phuc.jpg'
+import Vibes7 from '@/public/batch-0/steve.jpg'
+import Villa0 from '@/public/da-nang-villa/0.jpg'
+import Villa1 from '@/public/da-nang-villa/1.jpg'
+import Villa2 from '@/public/da-nang-villa/4.jpg'
+import Villa3 from '@/public/da-nang-villa/8.jpg'
 
+import { dots } from './dots'
 import { hosts } from './hosts'
 import { mentors } from './mentors'
 import { residents } from './residents'
 
-const dots: Array<{
-  start: { lat: number; lng: number; label?: string }
-  end: { lat: number; lng: number; label?: string }
-}> = [
-  {
-    start: { lat: 40.741_895, lng: -73.989_308 },
-    end: { lat: 16.0544, lng: 108.2022 }
-  },
+const villaImages = [
+  { data: Villa0, alt: 'Da Nang Villa' },
+  { data: Villa1, alt: 'Da Nang Villa' },
+  { data: Villa2, alt: 'Da Nang Villa' },
+  { data: Villa3, alt: 'Da Nang Villa' }
+]
 
-  {
-    start: { lat: 37.779_258_8, lng: -122.419_328_6 },
-    end: { lat: 16.0544, lng: 108.2022 }
-  },
-  {
-    start: { lat: 47.218_637_1, lng: -1.554_136_2 },
-    end: { lat: 16.0544, lng: 108.2022 }
-  },
-  {
-    start: { lat: 36.566_982_269_287_11, lng: 126.978_233_337_402_34 },
-    end: { lat: 16.0544, lng: 108.2022 }
-  },
-  {
-    start: { lat: 51.507_445_6, lng: -0.127_765_3 },
-    end: { lat: 16.0544, lng: 108.2022 }
-  },
-  {
-    start: { lat: 48.208_353_7, lng: 16.372_504_2 },
-    end: { lat: 16.0544, lng: 108.2022 }
-  },
-  {
-    start: { lat: 10.775_525_4, lng: 106.702_104_7 },
-    end: { lat: 16.0544, lng: 108.2022 }
-  },
-  {
-    start: { lat: 55.686_724_3, lng: 12.570_072_4 },
-    end: { lat: 16.0544, lng: 108.2022 }
-  },
-  {
-    start: { lat: 49.260_872_4, lng: -123.113_952 },
-    end: { lat: 16.0544, lng: 108.2022 }
-  },
-  {
-    start: { lat: -8.650_619_3, lng: 115.136_500_7 },
-    end: { lat: 16.0544, lng: 108.2022 }
-  },
-  {
-    start: { lat: 15.300_454_3, lng: 74.085_513_4 },
-    end: { lat: 16.0544, lng: 108.2022 }
-  },
-  {
-    start: { lat: 33.875_062_9, lng: 35.843_409 },
-    end: { lat: 16.0544, lng: 108.2022 }
-  },
-  {
-    start: { lat: 38.725_177_6, lng: -105.607_716 },
-    end: { lat: 16.0544, lng: 108.2022 }
-  },
-  {
-    start: { lat: 13.752_493_8, lng: 100.493_508_9 },
-    end: { lat: 16.0544, lng: 108.2022 }
-  },
-  {
-    start: { lat: 21.028_333_4, lng: 105.854_041 },
-    end: { lat: 16.0544, lng: 108.2022 }
-  },
-  {
-    start: { lat: 6.269_732_4, lng: -75.602_559_7 },
-    end: { lat: 16.0544, lng: 108.2022 }
-  }
+const batch0VibesImages = [
+  { data: Vibes0, alt: 'HRG batch vibes' },
+  { data: Vibes5, alt: 'HRG batch vibes' },
+  { data: Vibes1, alt: 'HRG batch vibes' },
+  { data: Vibes2, alt: 'HRG batch vibes' },
+  { data: Vibes3, alt: 'HRG batch vibes' },
+  { data: Vibes4, alt: 'HRG batch vibes' },
+  { data: Vibes6, alt: 'HRG batch vibes' },
+  { data: Vibes7, alt: 'HRG batch vibes' }
+]
+
+const batch0DemoDayImages = [
+  { data: Batch0DemoDay0, alt: 'Demo Day' },
+  { data: Batch0DemoDay1, alt: 'Demo Day' },
+  { data: Batch0DemoDay2, alt: 'Demo Day' },
+  { data: Batch0DemoDay3, alt: 'Demo Day' },
+  { data: Batch0DemoDay5, alt: 'Demo Day' },
+  { data: Batch0DemoDay4, alt: 'Demo Day' }
 ]
 
 export default function Batch0Page() {
@@ -119,6 +95,36 @@ export default function Batch0Page() {
         <PeopleGrid title='Mentors' people={mentors} />
 
         <PeopleGrid title='Hosts' people={hosts} />
+
+        <section className='flex flex-col gap-12 mb-16 px-4'>
+          <h2 className='text-center text-balance text-4xl font-semibold leading-normal max-w-3xl'>
+            Marisol Villa
+          </h2>
+
+          <ImageGallery images={villaImages} />
+        </section>
+
+        <section className='flex flex-col gap-12 mb-16 px-4'>
+          <h2 className='text-center text-balance text-4xl font-semibold leading-normal max-w-3xl'>
+            Vibes
+          </h2>
+
+          <ImageGallery images={batch0VibesImages} />
+        </section>
+
+        <section className='flex flex-col gap-12 mb-16 px-4'>
+          <div className='flex flex-col gap-4'>
+            <h2 className='text-center text-balance text-4xl font-semibold leading-normal max-w-3xl'>
+              Demo Day
+            </h2>
+
+            <p className='text-center text-pretty text-sm italic leading-normal'>
+              November 30th, 2025
+            </p>
+          </div>
+
+          <ImageGallery images={batch0DemoDayImages} />
+        </section>
 
         <SponsorSection />
       </section>

@@ -37,7 +37,11 @@ export const residents: Person[] = [
         <Link href='https://x.com/tibo_maker' target='_blank' className='link'>
           Tibo Maker
         </Link>{' '}
-        on a Cursor for X; $200k ARR growing fast.
+        on{' '}
+        <Link href='https://superx.so' target='_blank' className='link'>
+          SuperX
+        </Link>
+        , a Cursor for X; $200k ARR growing fast.
       </>
     ),
     location: 'UK'
@@ -54,13 +58,13 @@ export const residents: Person[] = [
           Once
         </Link>
         ; previous apps $700k ARR and $50k ARR respectively; raised over $15M
-        venture. +1{' '}
+        venture.{' '}
         <Link
           href='https://www.linkedin.com/in/yen-kim-2541a9240'
           target='_blank'
           className='link'
         >
-          Kim
+          +1 Kim
         </Link>
         .
       </>

@@ -1,10 +1,8 @@
 'use client'
 
-import Image, { type StaticImageData } from 'next/image'
 import { useRef } from 'react'
-import { PhotoView } from 'react-photo-view'
 
-import { Card } from '@/components/card'
+import { ImageGallery } from '@/components/image-gallery'
 import { AnimatedGradientBackground } from '@/components/ui/animated-gradient-background'
 import Villa0 from '@/public/da-nang-villa-legos/0.jpg'
 import Villa1 from '@/public/da-nang-villa-legos/1.jpg'
@@ -16,6 +14,13 @@ import { CTASection } from './home/cta-section'
 import { HeroSection } from './home/hero-section'
 import { LocationSection } from './home/location-section'
 import { TeamSection } from './home/team-section'
+
+const featuredImages = [
+  { data: Villa0, alt: 'Da Nang Villa' },
+  { data: Villa1, alt: 'Da Nang Villa' },
+  { data: Villa2, alt: 'Da Nang Villa' },
+  { data: Villa3, alt: 'Da Nang Villa' }
+]
 
 export default function TheBestDamnLandingPageEver() {
   return (
@@ -83,12 +88,7 @@ function StorySectionWhat() {
         <p>Fully equipped for focused work.</p>
       </h3>
 
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl'>
-        <FeaturedPhoto image={Villa0} />
-        <FeaturedPhoto image={Villa1} />
-        <FeaturedPhoto image={Villa2} />
-        <FeaturedPhoto image={Villa3} />
-      </div>
+      <ImageGallery images={featuredImages} />
     </section>
   )
 }
@@ -149,29 +149,5 @@ function StorySectionWhy() {
         </div>
       </h3>
     </section>
-  )
-}
-
-function FeaturedPhoto({
-  image,
-  alt = 'Da Nang Villa'
-}: {
-  image: StaticImageData
-  alt?: string
-}) {
-  return (
-    <Card>
-      <PhotoView src={image.src}>
-        <Image
-          src={image.src}
-          alt={alt}
-          placeholder='blur'
-          width={image.width}
-          height={image.height}
-          blurDataURL={image.blurDataURL}
-          className='rounded-3xl shadow-sm cursor-pointer'
-        />
-      </PhotoView>
-    </Card>
   )
 }

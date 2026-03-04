@@ -12,15 +12,15 @@ export function Card({
   return (
     <div
       className={cn(
-        'rounded-[2rem] shadow-[inset_0_0_2px_1px_#ffffff4d] ring-1 ring-black/5 ',
+        'rounded-4xl shadow-[inset_0_0_2px_1px_#ffffff4d] ring-1 ring-black/5 h-full',
         className
       )}
     >
-      <div className='grid grid-cols-1 rounded-[2rem] p-2 shadow-md shadow-black/5'>
+      <div className='grid grid-cols-1 rounded-4xl p-2 shadow-md shadow-black/5 h-full'>
         <div
           className={cn(
             // bg-card
-            'rounded-3xl bg-gray-800 shadow-2xl ring-1 ring-black/5 color-card-foreground',
+            'rounded-3xl bg-gray-800 shadow-2xl ring-1 ring-black/5 color-card-foreground h-full',
             innerClassName
           )}
         >

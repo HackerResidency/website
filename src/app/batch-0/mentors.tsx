@@ -73,6 +73,8 @@ export const mentors: Person[] = [
     image: AlexReibman,
     url: 'https://x.com/AlexReibman',
     twitter: 'https://x.com/AlexReibman',
+    github: 'https://github.com/areibman',
+    linkedin: 'https://www.linkedin.com/in/alex-reibman-67951589/',
     description: (
       <>
         Serial venture-backed founder &amp; AI eng; formerly co-founder of{' '}
