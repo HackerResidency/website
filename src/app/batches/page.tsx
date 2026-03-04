@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import { Card } from '@/components/card'
+import { HeroButton } from '@/components/hero-button'
 import { AnimatedGradientBackground } from '@/components/ui/animated-gradient-background'
 import HeroImageBatch0 from '@/public/da-nang-villa/hero.jpg'
 import HeroImageBatch1 from '@/public/da-nang-villa-legos/0.jpg'
@@ -13,7 +14,7 @@ export default function Batch0Page() {
     <>
       <AnimatedGradientBackground />
 
-      <section className='relative z-10 w-full flex flex-col gap-32 pt08 flex-1 justify-center '>
+      <section className='relative z-10 w-full flex flex-col gap-24 py-4 flex-1 justify-center '>
         <div className='flex flex-col w-full gap-8 max-w-3xl justify-center'>
           <h1 className='text-center text-balance font-semibold text-4xl font-heading'>
             HRG Batches
@@ -71,6 +72,10 @@ export default function Batch0Page() {
             </Card>
           </Link>
         </div>
+
+        <HeroButton heroVariant='red'>
+          <Link href='/'>stack.pop();</Link>
+        </HeroButton>
       </section>
     </>
   )
