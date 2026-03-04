@@ -14,7 +14,8 @@ export function Card({
   return (
     <div
       className={cn(
-        'rounded-4xl shadow-[inset_0_0_2px_1px_#ffffff4d] ring-1 ring-black/5 h-full',
+        'rounded-4xl shadow-[inset_0_0_2px_1px_#ffffff4d] ring-1 ring-black/5',
+        hero ? '' : 'h-full',
         className
       )}
     >
