@@ -73,7 +73,7 @@ export const residents: Person[] = [
     location: 'South Korea'
   },
   {
-    name: 'Lilian',
+    name: 'Lilian Holler',
     image: Lilian,
     url: 'https://x.com/lilianbuilds',
     twitter: 'https://x.com/lilianbuilds',
