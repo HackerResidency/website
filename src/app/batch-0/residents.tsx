@@ -18,6 +18,7 @@ export const residents: Person[] = [
     image: AlexNguyen,
     url: 'https://x.com/alexcooldev',
     twitter: 'https://x.com/alexcooldev',
+    github: 'https://github.com/alexnt2499',
     description: (
       <>
         Multiple AI apps ~$35k MRR; runs a large TikTok growth hacking
@@ -31,17 +32,15 @@ export const residents: Person[] = [
     image: RobHallam,
     url: 'https://x.com/robj3d3',
     twitter: 'https://x.com/robj3d3',
+    github: 'https://github.com/robj3d3',
+    linkedin: 'https://www.linkedin.com/in/roberthallam/',
     description: (
       <>
-        Working with{' '}
-        <Link href='https://x.com/tibo_maker' target='_blank' className='link'>
-          Tibo Maker
-        </Link>{' '}
-        on{' '}
+        Building{' '}
         <Link href='https://superx.so' target='_blank' className='link'>
           SuperX
         </Link>
-        , a Cursor for X; $200k ARR growing fast.
+        , Cursor for X; $360k ARR growing fast.
       </>
     ),
     location: 'UK'
@@ -51,6 +50,8 @@ export const residents: Person[] = [
     image: BrianShin,
     url: 'https://x.com/brianshinsh',
     twitter: 'https://x.com/brianshinsh',
+    github: 'https://github.com/bri-shin',
+    linkedin: 'https://www.linkedin.com/in/shbrianshin/',
     description: (
       <>
         Building{' '}
@@ -65,8 +66,8 @@ export const residents: Person[] = [
           className='link'
         >
           +1 Yen
-        </Link>
-        .
+        </Link>{' '}
+        is an amazing designer.
       </>
     ),
     location: 'Seoul'
@@ -76,6 +77,8 @@ export const residents: Person[] = [
     image: Lilian,
     url: 'https://x.com/lilianbuilds',
     twitter: 'https://x.com/lilianbuilds',
+    github: 'https://github.com/lholler',
+    linkedin: 'https://www.linkedin.com/in/lilian-holler-636254203/',
     description: (
       <>
         Building{' '}
@@ -97,6 +100,8 @@ export const residents: Person[] = [
     image: ThomasSanlis,
     url: 'https://x.com/T_Zahil',
     twitter: 'https://x.com/T_Zahil',
+    github: 'https://github.com/T-Zahil',
+    linkedin: 'https://www.linkedin.com/in/thomas-sanlis/',
     description: (
       <>
         Building PH competitor{' '}
@@ -114,6 +119,8 @@ export const residents: Person[] = [
     image: MilesFeldstein,
     url: 'https://x.com/MilesFeldstein',
     twitter: 'https://x.com/MilesFeldstein',
+    github: 'https://github.com/milesfeldstein',
+    linkedin: 'https://www.linkedin.com/in/miles-feldstein/',
     description: (
       <>
         Prev co-founded{' '}
@@ -143,12 +150,8 @@ export const residents: Person[] = [
     linkedin: 'https://www.linkedin.com/in/ayushsoni1001/',
     description: (
       <>
-        21yo with 5 exits; $450k+ ARR across multiple SaaS; building{' '}
-        <Link href='https://www.revid.ai/' target='_blank' className='link'>
-          revid.ai
-        </Link>{' '}
-        and a portfolio of other AI apps; top 100 Shopify plugin authors in the
-        world.
+        21yo with 5 exits; $450k+ ARR across multiple SaaS; top 100 Shopify
+        plugin authors in the world.
       </>
     ),
     location: 'Goa, India'
@@ -158,6 +161,8 @@ export const residents: Person[] = [
     image: JosefButtgen,
     url: 'https://x.com/josefbuettgen',
     twitter: 'https://x.com/josefbuettgen',
+    github: 'https://github.com/J3012B/',
+    linkedin: 'https://www.linkedin.com/in/josef-b%C3%BCttgen-53b127144/',
     description: (
       <>
         Building{' '}
@@ -182,6 +187,8 @@ export const residents: Person[] = [
     image: FaiNe,
     url: 'https://x.com/fai_ne',
     twitter: 'https://x.com/fai_ne',
+    github: 'https://github.com/fai-none',
+    linkedin: 'https://www.linkedin.com/in/fai-sukontanit/',
     description: (
       <>
         Former VC in Thailand who ran a venture studio in Bangkok; building{' '}
@@ -198,6 +205,8 @@ export const residents: Person[] = [
     image: HassanBazzi,
     url: 'https://x.com/habazzi',
     twitter: 'https://x.com/habazzi',
+    linkedin: 'https://www.linkedin.com/in/habazzi/',
+    github: 'https://github.com/hassanbazzi',
     description: (
       <>
         Serial technical founder w/ 2 exits; building{' '}
