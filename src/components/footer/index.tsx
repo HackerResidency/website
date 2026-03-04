@@ -33,6 +33,10 @@ export function Footer() {
               FAQ
             </ActiveLink>
 
+            <ActiveLink href='/batches' className='link'>
+              Batches
+            </ActiveLink>
+
             <ActiveLink href='/sponsors' className='link'>
               Sponsor Info
             </ActiveLink>
