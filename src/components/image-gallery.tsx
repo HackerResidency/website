@@ -20,7 +20,8 @@ export function ImageGallery({
   return (
     <div
       className={cn(
-        `grid grid-cols-${maxColumns} gap-4 max-w-4xl h-full auto-rows-fr`,
+        'grid grid-cols-1 gap-4 max-w-4xl h-full auto-rows-fr',
+        maxColumns === 2 ? 'grid-cols-2' : 'grid-cols-3',
         className
       )}
     >
@@ -43,7 +44,7 @@ function ImageGalleryItem({
   alt?: string
 }) {
   return (
-    <Card className='h-full max-w-full'>
+    <Card className='w-full h-full max-w-full'>
       <PhotoView src={image.src}>
         <Image
           src={image.src}

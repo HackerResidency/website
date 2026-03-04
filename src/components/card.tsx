@@ -26,7 +26,6 @@ export function Card({
       >
         <div
           className={cn(
-            // bg-card
             'rounded-3xl bg-gray-800 shadow-2xl ring-1 ring-black/5 color-card-foreground',
             hero ? '' : 'h-full',
             innerClassName

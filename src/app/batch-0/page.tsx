@@ -19,6 +19,7 @@ import Batch0DemoDay2 from '@/public/batch-0/demo-day-2.jpg'
 import Batch0DemoDay3 from '@/public/batch-0/demo-day-3.jpg'
 import Batch0DemoDay4 from '@/public/batch-0/demo-day-4.jpg'
 import Batch0DemoDay5 from '@/public/batch-0/demo-day-5.jpg'
+import Vibes8 from '@/public/batch-0/edmund.jpg'
 import Vibes5 from '@/public/batch-0/group-dinner-hotpot.jpg'
 import Vibes0 from '@/public/batch-0/hrg-crew-nov-14-2025.jpg'
 import Vibes6 from '@/public/batch-0/phuc.jpg'
@@ -47,8 +48,9 @@ const batch0VibesImages = [
   { data: Vibes2, alt: 'HRG batch vibes' },
   { data: Vibes3, alt: 'HRG batch vibes' },
   { data: Vibes4, alt: 'HRG batch vibes' },
+  { data: Vibes7, alt: 'HRG batch vibes' },
   { data: Vibes6, alt: 'HRG batch vibes' },
-  { data: Vibes7, alt: 'HRG batch vibes' }
+  { data: Vibes8, alt: 'HRG batch vibes' }
 ]
 
 const batch0DemoDayImages = [
