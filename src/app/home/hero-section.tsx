@@ -132,7 +132,7 @@ export function HeroSection() {
               scale: { type: 'tween', visualDuration: 0.4 }
             }}
           >
-            <Card>
+            <Card hero={true}>
               <Image
                 src={HeroImage}
                 alt='Da Nang Villa'
@@ -157,7 +157,7 @@ export function HeroSection() {
                 ref={targetRef}
                 className='absolute top-0 left-0 w-full h-full isolate will-change-transform transform-[translateY(0)] flex flex-col items-center justify-center'
               >
-                <Card>
+                <Card hero={true}>
                   <Image
                     src={HeroImage}
                     alt='Da Nang Villa'
