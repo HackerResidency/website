@@ -151,30 +151,7 @@ export const residents: Person[] = [
         <Link href='https://sitegpt.ai/' target='_blank' className='link'>
           SiteGPT
         </Link>
-        . Serial founder with multiple exits.
-      </>
-    ),
-    location: 'India'
-  },
-  {
-    name: 'Praneeth Pike',
-    image: Praneeth,
-    url: 'https://x.com/praneethpike',
-    twitter: 'https://x.com/praneethpike',
-    github: 'https://github.com/Praneeth-pike',
-    linkedin: 'https://www.linkedin.com/in/praneethykasula/',
-    description: (
-      <>
-        Founder of{' '}
-        <Link
-          href='https://www.rabbitholes.ai/'
-          target='_blank'
-          className='link'
-        >
-          RabbitHoles.ai
-        </Link>
-        , a canvas-based UX for genAI with over $100k in revenue. Also runs a
-        design agency.
+        .
       </>
     ),
     location: 'India'
@@ -213,6 +190,29 @@ export const residents: Person[] = [
       </>
     ),
     location: 'SF'
+  },
+  {
+    name: 'Praneeth Pike',
+    image: Praneeth,
+    url: 'https://x.com/praneethpike',
+    twitter: 'https://x.com/praneethpike',
+    github: 'https://github.com/Praneeth-pike',
+    linkedin: 'https://www.linkedin.com/in/praneethykasula/',
+    description: (
+      <>
+        Founder of{' '}
+        <Link
+          href='https://www.rabbitholes.ai/'
+          target='_blank'
+          className='link'
+        >
+          RabbitHoles.ai
+        </Link>
+        , a canvas-based UX for genAI with over $100k in revenue. Also runs a
+        design agency.
+      </>
+    ),
+    location: 'India'
   },
   {
     name: 'Elitza Vasileva',
