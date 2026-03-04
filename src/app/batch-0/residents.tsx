@@ -64,7 +64,7 @@ export const residents: Person[] = [
           target='_blank'
           className='link'
         >
-          +1 Kim
+          +1 Yen
         </Link>
         .
       </>
