@@ -67,19 +67,19 @@ export default function Batch0Page() {
     <>
       <AnimatedGradientBackground />
 
-      <section className='relative z-10 w-full flex flex-col gap-16 flex-1 justify-center '>
+      <section className='relative z-10 w-full flex flex-col gap-32 pt-8 flex-1 justify-center '>
         <div className='flex flex-col w-full gap-8 max-w-3xl justify-center'>
-          <h2 className='text-center text-balance font-semibold text-3xl font-heading'>
+          <h1 className='text-center text-balance font-semibold text-4xl font-heading'>
             HRG Fall 2025
-          </h2>
+          </h1>
 
           <div className='flex flex-col gap-2'>
-            <p className='text-center text-pretty text-md leading-normal'>
-              Da Nang, Vietnam
+            <p className='text-center text-pretty text-md italic leading-normal'>
+              November 1st – 30th, 2025
             </p>
 
-            <p className='text-center text-pretty text-sm italic leading-normal'>
-              November 1st – 30th, 2025
+            <p className='text-center text-pretty text-md leading-normal'>
+              Da Nang, Vietnam
             </p>
           </div>
 
@@ -94,7 +94,7 @@ export default function Batch0Page() {
 
         <PeopleGrid title='Hosts' people={hosts} />
 
-        <section className='flex flex-col gap-12 mb-16 px-4'>
+        <section className='flex flex-col gap-12 px-4'>
           <h2 className='text-center text-balance text-4xl font-semibold leading-normal max-w-3xl'>
             Marisol Villa
           </h2>
@@ -102,7 +102,7 @@ export default function Batch0Page() {
           <ImageGallery images={villaImages} />
         </section>
 
-        <section className='flex flex-col gap-12 mb-16 px-4'>
+        <section className='flex flex-col gap-12 px-4'>
           <h2 className='text-center text-balance text-4xl font-semibold leading-normal max-w-3xl'>
             Vibes
           </h2>
@@ -110,7 +110,7 @@ export default function Batch0Page() {
           <ImageGallery images={batch0VibesImages} />
         </section>
 
-        <section className='flex flex-col gap-12 mb-16 px-4'>
+        <section className='flex flex-col gap-12 px-4'>
           <div className='flex flex-col gap-4'>
             <h2 className='text-center text-balance text-4xl font-semibold leading-normal max-w-3xl'>
               Demo Day
@@ -136,7 +136,7 @@ export default function Batch0Page() {
 
 function SponsorSection() {
   return (
-    <section className='relative z-10 flex flex-col gap-12 mb-16 px-4'>
+    <section className='relative z-10 flex flex-col gap-12 px-4'>
       <h2 className='text-center text-balance text-4xl font-semibold leading-normal max-w-3xl'>
         Sponsors
       </h2>

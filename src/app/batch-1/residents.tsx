@@ -120,7 +120,7 @@ export const residents: Person[] = [
           target='_blank'
           className='link'
         >
-          MissionControlHQ
+          Mission Control HQ
         </Link>{' '}
         (17k MRR) and{' '}
         <Link href='https://sitegpt.ai/' target='_blank' className='link'>
@@ -145,7 +145,7 @@ export const residents: Person[] = [
           target='_blank'
           className='link'
         >
-          MissionControlHQ
+          Mission Control HQ
         </Link>{' '}
         and{' '}
         <Link href='https://sitegpt.ai/' target='_blank' className='link'>

@@ -30,9 +30,7 @@ export function PeopleGrid({
   children?: React.ReactNode
 }) {
   return (
-    <section
-      className={cn('relative z-10 flex flex-col gap-16 mb-16', className)}
-    >
+    <section className={cn('relative z-10 flex flex-col gap-16', className)}>
       <h2 className='text-center text-balance text-4xl font-semibold leading-normal max-w-3xl'>
         {title}
       </h2>

@@ -21,7 +21,8 @@ export function ImageGallery({
     <div
       className={cn(
         'grid grid-cols-1 gap-4 max-w-4xl h-full auto-rows-fr',
-        maxColumns === 2 ? 'grid-cols-2' : 'grid-cols-3',
+        maxColumns === 2 ? 'md:grid-cols-2' : 'md:grid-cols-3',
+        maxColumns === 2 ? 'md:gap-8' : 'md:gap-6',
         className
       )}
     >

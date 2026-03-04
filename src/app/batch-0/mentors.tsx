@@ -57,6 +57,8 @@ export const mentors: Person[] = [
     image: DanielNguyen,
     url: 'https://x.com/daniel_nguyenx',
     twitter: 'https://x.com/daniel_nguyenx',
+    linkedin: 'https://www.linkedin.com/in/danielnguyenx/',
+    github: 'https://github.com/longseespace',
     description: (
       <>
         Rockstar Vietnamese indie hacker. Founder of{' '}
