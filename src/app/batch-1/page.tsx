@@ -121,23 +121,11 @@ export default function Batch0Page() {
           </HeroButton>
         </div>
 
-        <PeopleGrid title='Residents' people={residents}>
-          <HeroButton heroVariant='red'>
-            <Link href='/'>stack.pop();</Link>
-          </HeroButton>
-        </PeopleGrid>
+        <PeopleGrid title='Residents' people={residents} />
 
-        <PeopleGrid title='Mentors' people={mentors}>
-          <HeroButton heroVariant='red'>
-            <Link href='/'>stack.pop();</Link>
-          </HeroButton>
-        </PeopleGrid>
+        <PeopleGrid title='Mentors' people={mentors} />
 
-        <PeopleGrid title='Hosts' people={hosts}>
-          <HeroButton heroVariant='red'>
-            <Link href='/'>stack.pop();</Link>
-          </HeroButton>
-        </PeopleGrid>
+        <PeopleGrid title='Hosts' people={hosts} />
 
         <SponsorSection>
           <HeroButton heroVariant='red'>

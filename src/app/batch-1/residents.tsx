@@ -27,8 +27,18 @@ export const residents: Person[] = [
     linkedin: 'https://www.linkedin.com/in/florinpop17',
     description: (
       <>
-        200k followers on X; 150k followers on YT; dev influencer &amp; indie
-        hacker shipping like crazy. From Romania.
+        <Link href='https://x.com/florinpop17' target='_blank' className='link'>
+          200k followers on X
+        </Link>
+        ;{' '}
+        <Link
+          href='https://www.youtube.com/@florinpop'
+          target='_blank'
+          className='link'
+        >
+          170k followers on YT
+        </Link>
+        ; dev influencer &amp; indie hacker shipping like crazy. From Romania.
       </>
     )
   },
@@ -122,6 +132,7 @@ export const residents: Person[] = [
     image: Sai,
     url: 'https://x.com/saidheeraj_96',
     twitter: 'https://x.com/saidheeraj_96',
+    linkedin: 'https://www.linkedin.com/in/dheerajpachipulusu/',
     description: (
       <>
         Co-Founder of{' '}
@@ -146,6 +157,7 @@ export const residents: Person[] = [
     url: 'https://x.com/praneethpike',
     twitter: 'https://x.com/praneethpike',
     github: 'https://github.com/Praneeth-pike',
+    linkedin: 'https://www.linkedin.com/in/praneethykasula/',
     description: (
       <>
         Founder of{' '}
@@ -200,6 +212,7 @@ export const residents: Person[] = [
     url: 'https://x.com/ElitzaVasileva',
     twitter: 'https://x.com/ElitzaVasileva',
     github: 'https://github.com/elitza-vasileva',
+    linkedin: 'https://www.linkedin.com/in/elitza-vasileva/',
     description: (
       <>
         Founder of{' '}
@@ -217,8 +230,15 @@ export const residents: Person[] = [
     url: 'https://x.com/qwertyu_alex',
     twitter: 'https://x.com/qwertyu_alex',
     github: 'https://github.com/qwertyu-alex',
+    linkedin: 'https://www.linkedin.com/in/alexandervle/',
     description: (
-      <>Co-Founder of Starpop, AI UGC videos, $15k MRR. From Denmark.</>
+      <>
+        Co-Founder of{' '}
+        <Link href='https://www.starpop.ai/' target='_blank' className='link'>
+          Starpop
+        </Link>
+        , AI UGC videos, $15k MRR. From Denmark.
+      </>
     )
   },
   {
@@ -226,8 +246,16 @@ export const residents: Person[] = [
     image: DavidIshag,
     url: 'https://x.com/david_ishg',
     twitter: 'https://x.com/david_ishg',
+    github: 'https://github.com/Davidshag',
+    linkedin: 'https://www.linkedin.com/in/david-ishag-a18782352/',
     description: (
-      <>Co-Founder of Starpop, AI UGC videos, $15k MRR. From Switzerland.</>
+      <>
+        Co-Founder of{' '}
+        <Link href='https://www.starpop.ai/' target='_blank' className='link'>
+          Starpop
+        </Link>
+        , AI UGC videos, $15k MRR. From Switzerland.
+      </>
     )
   },
   {
@@ -236,6 +264,7 @@ export const residents: Person[] = [
     url: 'https://x.com/chrissyinspace',
     twitter: 'https://x.com/chrissyinspace',
     github: 'https://github.com/chrissy0',
+    linkedin: 'https://www.linkedin.com/in/christopher-woggon-3b2774271/',
     description: (
       <>
         Building{' '}
@@ -256,17 +285,12 @@ export const residents: Person[] = [
     image: Yeonji,
     url: 'https://x.com/yeonjidev',
     twitter: 'https://x.com/yeonjidev',
+    github: 'https://github.com/oyaa52',
+    linkedin:
+      'https://www.linkedin.com/in/%EC%97%B0%EC%A7%80-%EC%9E%84-396570223/',
     description: (
       <>
-        Building{' '}
-        <Link
-          href='https://www.tinylaunch.com/'
-          target='_blank'
-          className='link'
-        >
-          TinyLaunch
-        </Link>
-        , a launch platform for indie products, alongside{' '}
+        Building a portfolio of small bets alongside{' '}
         <Link
           href='https://x.com/chrissyinspace'
           target='_blank'
@@ -274,7 +298,7 @@ export const residents: Person[] = [
         >
           Christopher Woggon
         </Link>
-        . From Germany.
+        . From South Korea.
       </>
     )
   },
@@ -283,11 +307,16 @@ export const residents: Person[] = [
     image: JonathanParra,
     url: 'https://x.com/jondeparra',
     twitter: 'https://x.com/jondeparra',
+    github: 'https://github.com/jondeparra',
+    linkedin: 'https://www.linkedin.com/in/jondeparra/',
     description: (
       <>
-        The Paywall guy. Prev Superwall (YC S21). Agency building mobile apps
-        including Prove It ($600k MRR), and currently a Pokémon Go-like app for
-        bird watchers. From Las Vegas.
+        The Paywall guy. Prev{' '}
+        <Link href='https://superwall.com' target='_blank' className='link'>
+          Superwall
+        </Link>
+        (YC S21). Agency building mobile apps including Prove It ($600k MRR),
+        and currently a Pokémon Go-like app for bird watchers. From Las Vegas.
       </>
     )
   }

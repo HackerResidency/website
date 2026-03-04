@@ -19,7 +19,7 @@ export function Sponsor({
     <Link
       href={href}
       target='_blank'
-      className='flex flex-col items-center justify-center'
+      className='flex flex-col items-center justify-center transition-[filter] hover:brightness-75'
     >
       <img
         src={src}
