@@ -49,6 +49,10 @@ export function Header() {
             FAQ
           </ActiveLink>
 
+          <ActiveLink href='/batches' className='link'>
+            Batches
+          </ActiveLink>
+
           <div className='flex flex-row justify-end items-center h-full gap-4'>
             {/* <DarkModeToggle /> */}
 

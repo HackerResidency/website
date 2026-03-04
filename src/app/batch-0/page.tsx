@@ -92,7 +92,7 @@ export default function Batch0Page() {
       <section className='relative z-10 w-full flex flex-col gap-16 flex-1 justify-center '>
         <div className='flex flex-col w-full gap-8 max-w-3xl justify-center'>
           <h2 className='text-center text-balance font-semibold text-3xl font-heading'>
-            HRG Batch 0
+            HRG Fall 2025
           </h2>
 
           <div className='flex flex-col gap-2'>
