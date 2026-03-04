@@ -87,7 +87,7 @@ export default function Batch0Page() {
 
       <section className='relative z-10 w-full flex flex-col gap-8 max-w-3xl flex-1 justify-center '>
         <h2 className='text-center text-balance font-semibold text-3xl font-heading'>
-          HRG Batch 0
+          HRG Batch 1
         </h2>
 
         <div className='flex flex-col gap-2'>
@@ -96,7 +96,7 @@ export default function Batch0Page() {
           </p>
 
           <p className='text-center text-pretty text-sm italic leading-normal'>
-            November 1st – 30th, 2025
+            May 1st – 31st, 2026
           </p>
         </div>
 
