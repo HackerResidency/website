@@ -17,9 +17,10 @@ export const mentors: Person[] = [
     description: (
       <>
         Prolific portfolio of bootstrapped products; over $8M ARR; &gt;180k
-        followers on X. From France.
+        followers on X.
       </>
-    )
+    ),
+    location: 'France'
   },
   {
     name: 'David Zhang',
@@ -42,9 +43,10 @@ export const mentors: Person[] = [
         <Link href='https://duet.so/' target='_blank' className='link'>
           Duet
         </Link>
-        . World-class AI eng &amp; serial founder. From SF.
+        . World-class AI eng &amp; serial founder.
       </>
-    )
+    ),
+    location: 'SF'
   },
   {
     name: 'Steve Peak',
@@ -60,9 +62,10 @@ export const mentors: Person[] = [
           codecov.io
         </Link>{' '}
         to Sentry as a solo founder for $10M. World-class AI eng &amp; serial
-        founder. From Colorado.
+        founder.
       </>
-    )
+    ),
+    location: 'Colorado'
   },
   {
     name: 'Ayush Soni',
@@ -74,8 +77,9 @@ export const mentors: Person[] = [
     description: (
       <>
         21yo with 5 exits. $450K+ ARR across multiple SaaS; top 100 Shopify app
-        builder in the world. From India.
+        builder in the world.
       </>
-    )
+    ),
+    location: 'India'
   }
 ]

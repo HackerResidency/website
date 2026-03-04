@@ -38,9 +38,10 @@ export const residents: Person[] = [
         >
           170k followers on YT
         </Link>
-        ; dev influencer &amp; indie hacker shipping like crazy. From Romania.
+        ; dev influencer &amp; indie hacker shipping like crazy.
       </>
-    )
+    ),
+    location: 'Romania'
   },
   {
     name: 'Andrew Zacker',
@@ -55,9 +56,10 @@ export const residents: Person[] = [
         <Link href='https://x.com/florinpop17' target='_blank' className='link'>
           Florin Pop
         </Link>
-        . From Poland.
+        .
       </>
-    )
+    ),
+    location: 'Poland'
   },
   {
     name: 'Eugene Zolotarenko',
@@ -76,9 +78,10 @@ export const residents: Person[] = [
         <Link href='https://x.com/tibo_maker' target='_blank' className='link'>
           Tibo Maker
         </Link>
-        . From Poland.
+        .
       </>
-    )
+    ),
+    location: 'Poland'
   },
   {
     name: 'Avery',
@@ -97,9 +100,10 @@ export const residents: Person[] = [
         <Link href='https://rankd.dev' target='_blank' className='link'>
           Rankd
         </Link>
-        , ASO optimization. Ex Apple/HubSpot. From Singapore.
+        , ASO optimization. Ex Apple/HubSpot.
       </>
-    )
+    ),
+    location: 'Singapore'
   },
   {
     name: 'Bhanu Teja P',
@@ -122,10 +126,10 @@ export const residents: Person[] = [
         <Link href='https://sitegpt.ai/' target='_blank' className='link'>
           SiteGPT
         </Link>{' '}
-        (19k MRR). 54k followers on X, serial founder with multiple exits. From
-        India.
+        (19k MRR). 54k followers on X, serial founder with multiple exits.
       </>
-    )
+    ),
+    location: 'India'
   },
   {
     name: 'Sai Dheeraj P',
@@ -147,9 +151,10 @@ export const residents: Person[] = [
         <Link href='https://sitegpt.ai/' target='_blank' className='link'>
           SiteGPT
         </Link>
-        . Serial founder with multiple exits. From India.
+        . Serial founder with multiple exits.
       </>
-    )
+    ),
+    location: 'India'
   },
   {
     name: 'Praneeth Pike',
@@ -169,9 +174,10 @@ export const residents: Person[] = [
           RabbitHoles.ai
         </Link>
         , a canvas-based UX for genAI with over $100k in revenue. Also runs a
-        design agency. From India.
+        design agency.
       </>
-    )
+    ),
+    location: 'India'
   },
   {
     name: 'Winston Iskandar',
@@ -186,9 +192,10 @@ export const residents: Person[] = [
         <Link href='https://similate.ai/' target='_blank' className='link'>
           Similate.ai
         </Link>
-        , a simulation platform for human behavior. From SF.
+        , a simulation platform for human behavior.
       </>
-    )
+    ),
+    location: 'SF'
   },
   {
     name: 'Alex Zhang',
@@ -202,9 +209,10 @@ export const residents: Person[] = [
         <Link href='https://similate.ai/' target='_blank' className='link'>
           Similate.ai
         </Link>
-        , a simulation platform for human behavior. From SF.
+        , a simulation platform for human behavior.
       </>
-    )
+    ),
+    location: 'SF'
   },
   {
     name: 'Elitza Vasileva',
@@ -220,9 +228,10 @@ export const residents: Person[] = [
           own.page
         </Link>
         , a link-in-bio / personal website builder with over 3k users and
-        growing fast. From Vienna, Austria.
+        growing fast.
       </>
-    )
+    ),
+    location: 'Vienna, Austria'
   },
   {
     name: 'Alexander Van Le',
@@ -237,9 +246,10 @@ export const residents: Person[] = [
         <Link href='https://www.starpop.ai/' target='_blank' className='link'>
           Starpop
         </Link>
-        , AI UGC videos, $15k MRR. From Denmark.
+        , AI UGC videos, $15k MRR.
       </>
-    )
+    ),
+    location: 'Denmark'
   },
   {
     name: 'David Ishag',
@@ -254,9 +264,10 @@ export const residents: Person[] = [
         <Link href='https://www.starpop.ai/' target='_blank' className='link'>
           Starpop
         </Link>
-        , AI UGC videos, $15k MRR. From Switzerland.
+        , AI UGC videos, $15k MRR.
       </>
-    )
+    ),
+    location: 'Switzerland'
   },
   {
     name: 'Christopher Woggon',
@@ -276,9 +287,10 @@ export const residents: Person[] = [
           TinyLaunch
         </Link>
         , a launch platform for indie products, $42k revenue so far. Also
-        building a portfolio of small bets. From Germany.
+        building a portfolio of small bets.
       </>
-    )
+    ),
+    location: 'Germany'
   },
   {
     name: 'Yeonji',
@@ -298,9 +310,10 @@ export const residents: Person[] = [
         >
           Christopher Woggon
         </Link>
-        . From South Korea.
+        .
       </>
-    )
+    ),
+    location: 'South Korea'
   },
   {
     name: 'Jonathan Parra',
@@ -314,10 +327,11 @@ export const residents: Person[] = [
         The Paywall guy. Prev{' '}
         <Link href='https://superwall.com' target='_blank' className='link'>
           Superwall
-        </Link>
+        </Link>{' '}
         (YC S21). Agency building mobile apps including Prove It ($600k MRR),
-        and currently a Pokémon Go-like app for bird watchers. From Las Vegas.
+        and currently a Pokémon Go-like app for bird watchers.
       </>
-    )
+    ),
+    location: 'Las Vegas'
   }
 ]

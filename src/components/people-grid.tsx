@@ -15,6 +15,7 @@ export interface Person {
   github?: string
   linkedin?: string
   description: React.ReactNode
+  location?: string
 }
 
 export function PeopleGrid({
@@ -42,7 +43,7 @@ export function PeopleGrid({
             key={person.name}
             className='group justify-self-center w-full grid grid-cols-1 max-w-xs'
           >
-            <div className='flex flex-col gap-4 color-card-foreground items-center p-6'>
+            <div className='flex flex-col gap-4 color-card-foreground items-center p-6 h-full'>
               <Link href={person.url} target='_blank' rel='noopener noreferrer'>
                 <Image
                   src={person.image}
@@ -92,9 +93,15 @@ export function PeopleGrid({
                 )}
               </div>
 
-              <p className='text-center text-balance text-sm leading-normal'>
+              <p className='flex-1 text-center text-balance text-sm leading-normal'>
                 {person.description}
               </p>
+
+              {person.location && (
+                <p className='text-center text-xs text-muted-foreground'>
+                  {person.location}
+                </p>
+              )}
             </div>
           </Card>
         ))}
