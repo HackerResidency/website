@@ -172,7 +172,7 @@ export const residents: Person[] = [
         , a simulation platform for human behavior.
       </>
     ),
-    location: 'SF'
+    location: 'USA'
   },
   {
     name: 'Alex Zhang',
@@ -189,7 +189,7 @@ export const residents: Person[] = [
         , a simulation platform for human behavior.
       </>
     ),
-    location: 'SF'
+    location: 'USA'
   },
   {
     name: 'Praneeth Pike',
@@ -231,7 +231,7 @@ export const residents: Person[] = [
         growing fast.
       </>
     ),
-    location: 'Vienna, Austria'
+    location: 'Austria'
   },
   {
     name: 'Alexander Van Le',
@@ -332,6 +332,6 @@ export const residents: Person[] = [
         and currently a Pokémon Go-like app for bird watchers.
       </>
     ),
-    location: 'Las Vegas'
+    location: 'USA'
   }
 ]

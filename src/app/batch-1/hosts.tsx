@@ -31,7 +31,7 @@ export const hosts: Person[] = [
         , Microsoft, and Amazon.
       </>
     ),
-    location: 'NY'
+    location: 'USA'
   },
   {
     name: 'Tony Dinh',
@@ -86,6 +86,6 @@ export const hosts: Person[] = [
         because they failed.
       </>
     ),
-    location: 'LA'
+    location: 'USA'
   }
 ]

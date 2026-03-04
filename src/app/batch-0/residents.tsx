@@ -25,7 +25,7 @@ export const residents: Person[] = [
         community; currently building Cursor for TikTok marketing.
       </>
     ),
-    location: 'Ho Chi Minh City'
+    location: 'Vietnam'
   },
   {
     name: 'Rob Hallam',
@@ -70,7 +70,7 @@ export const residents: Person[] = [
         is an amazing designer.
       </>
     ),
-    location: 'Seoul'
+    location: 'South Korea'
   },
   {
     name: 'Lilian',
@@ -93,7 +93,7 @@ export const residents: Person[] = [
         world champ 🤯
       </>
     ),
-    location: 'NY'
+    location: 'Austria'
   },
   {
     name: 'Thomas Sanlis',
@@ -139,7 +139,7 @@ export const residents: Person[] = [
         w/ the yeti guys from TikTok w/ over 1.2M followers.
       </>
     ),
-    location: 'NY'
+    location: 'USA'
   },
   {
     name: 'Ayush Soni',
@@ -154,7 +154,7 @@ export const residents: Person[] = [
         plugin authors in the world.
       </>
     ),
-    location: 'Goa, India'
+    location: 'India'
   },
   {
     name: 'Josef Büttgen',
@@ -180,7 +180,7 @@ export const residents: Person[] = [
         have been in the Bali indie scene for a long time; great vibes.
       </>
     ),
-    location: 'Bali / Germany'
+    location: 'Germany'
   },
   {
     name: 'Fai Fai',
@@ -198,7 +198,7 @@ export const residents: Person[] = [
         , Cursor for people learning how to code.
       </>
     ),
-    location: 'Bangkok / SF'
+    location: 'Thailand'
   },
   {
     name: 'Hassan Bazzi',
@@ -224,6 +224,6 @@ export const residents: Person[] = [
         .
       </>
     ),
-    location: 'Lebanon / Michigan / Copenhagen'
+    location: 'Denmark'
   }
 ]

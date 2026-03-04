@@ -86,10 +86,6 @@ export default function Batch0Page() {
           <Card className='w-full'>
             <WorldMap dots={dots} />
           </Card>
-
-          <HeroButton heroVariant='red' className='self-center'>
-            <Link href='/'>stack.pop();</Link>
-          </HeroButton>
         </div>
 
         <PeopleGrid title='Residents' people={residents} />
@@ -129,6 +125,10 @@ export default function Batch0Page() {
         </section>
 
         <SponsorSection />
+
+        <HeroButton heroVariant='red'>
+          <Link href='/batches'>stack.pop();</Link>
+        </HeroButton>
       </section>
     </>
   )

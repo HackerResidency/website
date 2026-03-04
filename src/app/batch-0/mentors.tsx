@@ -31,7 +31,7 @@ export const mentors: Person[] = [
         . World-class AI eng &amp; serial founder.
       </>
     ),
-    location: 'SF'
+    location: 'USA'
   },
   {
     name: 'Steve Peak',
@@ -50,7 +50,7 @@ export const mentors: Person[] = [
         founder.
       </>
     ),
-    location: 'Colorado'
+    location: 'USA'
   },
   {
     name: 'Daniel Nguyen',
@@ -88,6 +88,6 @@ export const mentors: Person[] = [
         and building AI experiments.
       </>
     ),
-    location: 'SF'
+    location: 'USA'
   }
 ]

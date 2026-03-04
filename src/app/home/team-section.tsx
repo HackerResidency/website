@@ -31,7 +31,7 @@ const people: Person[] = [
         , Microsoft, and Amazon.
       </>
     ),
-    location: 'NY'
+    location: 'USA'
   },
   {
     name: 'Tony Dinh',
@@ -86,7 +86,7 @@ const people: Person[] = [
         because they failed.
       </>
     ),
-    location: 'LA'
+    location: 'USA'
   }
 ]
 
