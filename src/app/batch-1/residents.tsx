@@ -245,10 +245,13 @@ export const residents: Person[] = [
     description: (
       <>
         Co-Founder of{' '}
-        <Link href='https://www.starpop.ai/' target='_blank' className='link'>
+        <Link href='https://starpop.ai/?utm_source=hackerresidency' target='_blank' className='link'>
           Starpop
         </Link>
-        , AI UGC videos, $15k MRR.
+        , a platform to make AI content, $15k MRR. 
+        Also runs <Link href='https://aiflowchat.com/?utm_source=hackerresidency' target='_blank' className='link'>
+          AI Flow Chat
+        </Link> an AI canvas for content creators and marketers, $3K MRR.
       </>
     ),
     location: 'Denmark'
@@ -263,10 +266,10 @@ export const residents: Person[] = [
     description: (
       <>
         Co-Founder of{' '}
-        <Link href='https://www.starpop.ai/' target='_blank' className='link'>
+        <Link href='https://starpop.ai/?utm_source=hackerresidency' target='_blank' className='link'>
           Starpop
         </Link>
-        , AI UGC videos, $15k MRR.
+        , a platform to make AI content, $15k MRR. 
       </>
     ),
     location: 'Switzerland'
