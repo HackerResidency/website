@@ -23,6 +23,7 @@ export const residents: Person[] = [
     image: FlorinPop,
     url: 'https://x.com/florinpop17',
     twitter: 'https://x.com/florinpop17',
+    youtube: 'https://www.youtube.com/@florinpop',
     github: 'https://github.com/florinpop17',
     linkedin: 'https://www.linkedin.com/in/florinpop17',
     description: (
@@ -38,7 +39,7 @@ export const residents: Person[] = [
         >
           170k followers on YT
         </Link>
-        ; dev influencer &amp; indie hacker shipping like crazy.
+        ; $500k in sales; dev influencer &amp; indie hacker shipping like crazy.
       </>
     ),
     location: 'Romania'
@@ -49,12 +50,13 @@ export const residents: Person[] = [
     url: 'https://x.com/andrewzacker',
     twitter: 'https://x.com/andrewzacker',
     github: 'https://github.com/zacker-tech',
-    linkedin: 'https://www.linkedin.com/in/andrewzacker/',
+    youtube: 'https://www.youtube.com/@andrew.zacker',
     description: (
       <>
-        Indie hacker shipping like crazy alongside{' '}
+        Indie hacker, shipping like crazy (5 launches in 2 months), and
+        documenting the journey. Working together with{' '}
         <Link href='https://x.com/florinpop17' target='_blank' className='link'>
-          Florin Pop
+          Florin
         </Link>
         .
       </>
