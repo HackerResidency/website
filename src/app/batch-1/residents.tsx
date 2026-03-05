@@ -208,8 +208,7 @@ export const residents: Person[] = [
         >
           RabbitHoles.ai
         </Link>
-        , a canvas-based UX for genAI with over $100k in revenue. Also runs a
-        design agency.
+        , a canvas-based UX for genAI with over $100k in revenue. Previously ran a product agency, and been chief designer for many startups.
       </>
     ),
     location: 'India'
