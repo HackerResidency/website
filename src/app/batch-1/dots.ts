@@ -75,7 +75,7 @@ export const dots: Array<{
     end: { lat: 16.0544, lng: 108.2022 }
   },
   {
-    start: { lat: 41.0082, lng: 28.9784 },
+    start: { lat: 31.8969, lng: 33.7133 },
     end: { lat: 16.0544, lng: 108.2022 }
   }
 ]
