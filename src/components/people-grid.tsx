@@ -5,6 +5,7 @@ import { Card } from '@/components/card'
 import { GitHubIcon } from '@/icons/github'
 import { LinkedInIcon } from '@/icons/linkedin'
 import { TwitterIcon } from '@/icons/twitter'
+import { YouTubeIcon } from '@/icons/youtube'
 import { cn } from '@/lib/utils'
 
 export interface Person {
@@ -14,6 +15,7 @@ export interface Person {
   twitter: string
   github?: string
   linkedin?: string
+  youtube?: string
   description: React.ReactNode
   location?: string
 }
@@ -67,6 +69,17 @@ export function PeopleGrid({
                 >
                   <TwitterIcon className='w-4 h-4' />
                 </Link>
+
+                {person.youtube && (
+                  <Link
+                    href={person.youtube}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='text-muted-foreground hover:text-card-foreground transition-colors'
+                  >
+                    <YouTubeIcon className='w-4 h-4' />
+                  </Link>
+                )}
 
                 {person.github && (
                   <Link
