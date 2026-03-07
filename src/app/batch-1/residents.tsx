@@ -96,13 +96,13 @@ export const residents: Person[] = [
       <>
         Psych major turned indie hacker; building{' '}
         <Link href='https://offscript.sh/' target='_blank' className='link'>
-          Offscript
+          Go Offscript
         </Link>{' '}
-        dev agency and{' '}
+        software studio and{' '}
         <Link href='https://rankd.dev' target='_blank' className='link'>
           Rankd
         </Link>
-        , ASO optimization. Ex Apple/HubSpot.
+        , ASO tool. Ex Apple/HubSpot.
       </>
     ),
     location: 'Singapore'
