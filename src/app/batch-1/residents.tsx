@@ -2,7 +2,6 @@ import Link from 'next/link'
 
 import type { Person } from '@/components/people-grid'
 import AlexVanLe from '@/public/people/alex-van-le.jpg'
-import AlexZhang from '@/public/people/alex-zhang.jpg'
 import AndrewZacker from '@/public/people/andrew-zacker.jpg'
 import Avery from '@/public/people/avery.jpg'
 import Bhanu from '@/public/people/bhanu.jpg'
@@ -11,10 +10,10 @@ import DavidIshag from '@/public/people/david-ishg.jpg'
 import Elitza from '@/public/people/elitza.jpg'
 import Eugene from '@/public/people/eugene.jpg'
 import FlorinPop from '@/public/people/florin-pop.jpg'
+import Irfan from '@/public/people/irfan.jpg'
 import JonathanParra from '@/public/people/jonathan-parra.jpg'
 import Praneeth from '@/public/people/praneeth.jpg'
 import Sai from '@/public/people/sai.jpg'
-import Winston from '@/public/people/winston.jpg'
 import Yeonji from '@/public/people/yeonji.jpg'
 
 export const residents: Person[] = [
@@ -159,36 +158,17 @@ export const residents: Person[] = [
     location: 'India'
   },
   {
-    name: 'Winston Iskandar',
-    image: Winston,
-    url: 'https://x.com/WinstonIsk',
-    twitter: 'https://x.com/WinstonIsk',
-    github: 'https://github.com/winstoniskandar',
-    linkedin: 'https://www.linkedin.com/in/winstoniskandar',
+    name: 'Irfan Sener',
+    image: Irfan,
+    url: 'https://x.com/irfansenercom',
+    twitter: 'https://x.com/irfansenercom',
+    github: 'https://github.com/irfansener',
     description: (
       <>
-        Stanford CS student &amp; Co-Founder of{' '}
-        <Link href='https://similate.ai/' target='_blank' className='link'>
-          Similate.ai
+        30+ mobile apps with 10m+ downloads. Trying to crack organic TikTok with{' '}
+        <Link href='http://makeviral.ai' target='_blank' className='link'>
+          makeviral.ai
         </Link>
-        , a simulation platform for human behavior.
-      </>
-    ),
-    location: 'USA'
-  },
-  {
-    name: 'Alex Zhang',
-    image: AlexZhang,
-    url: 'https://x.com/alexzhang104',
-    twitter: 'https://x.com/alexzhang104',
-    linkedin: 'https://www.linkedin.com/in/zhangalexanderx',
-    description: (
-      <>
-        Stanford CS student &amp; Co-Founder of{' '}
-        <Link href='https://similate.ai/' target='_blank' className='link'>
-          Similate.ai
-        </Link>
-        , a simulation platform for human behavior.
       </>
     ),
     location: 'USA'
