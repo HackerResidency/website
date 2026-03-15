@@ -10,7 +10,7 @@ import DavidIshag from '@/public/people/david-ishg.jpg'
 import Elitza from '@/public/people/elitza.jpg'
 import Eugene from '@/public/people/eugene.jpg'
 import FlorinPop from '@/public/people/florin-pop.jpg'
-import Irfan from '@/public/people/irfan.jpg'
+import IrfanSener from '@/public/people/irfan-sener.jpg'
 import JonathanParra from '@/public/people/jonathan-parra.jpg'
 import Praneeth from '@/public/people/praneeth.jpg'
 import Sai from '@/public/people/sai.jpg'
@@ -158,22 +158,6 @@ export const residents: Person[] = [
     location: 'India'
   },
   {
-    name: 'Irfan Sener',
-    image: Irfan,
-    url: 'https://x.com/irfansenercom',
-    twitter: 'https://x.com/irfansenercom',
-    github: 'https://github.com/irfansener',
-    description: (
-      <>
-        30+ mobile apps with 10m+ downloads. Trying to crack organic TikTok with{' '}
-        <Link href='http://makeviral.ai' target='_blank' className='link'>
-          makeviral.ai
-        </Link>
-      </>
-    ),
-    location: 'USA'
-  },
-  {
     name: 'Praneeth Pike',
     image: Praneeth,
     url: 'https://x.com/praneethpike',
@@ -317,5 +301,23 @@ export const residents: Person[] = [
       </>
     ),
     location: 'USA'
+  },
+  {
+    name: 'Irfan Sener',
+    image: IrfanSener,
+    url: 'https://x.com/irfansenercom',
+    twitter: 'https://x.com/irfansenercom',
+    linkedin: 'https://www.linkedin.com/in/irfansener/',
+    description: (
+      <>
+        Indie mobile dev with 8+ years shipping iOS &amp; Android apps. 10M+
+        downloads. Currently building{' '}
+        <Link href='https://makeviral.ai' target='_blank' className='link'>
+          MakeViral.ai
+        </Link>{' '}
+        and a portfolio of mobile apps.
+      </>
+    ),
+    location: 'Turkey'
   }
 ]
