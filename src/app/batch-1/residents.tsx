@@ -2,7 +2,6 @@ import Link from 'next/link'
 
 import type { Person } from '@/components/people-grid'
 import AlexVanLe from '@/public/people/alex-van-le.jpg'
-import AlexZhang from '@/public/people/alex-zhang.jpg'
 import AndrewZacker from '@/public/people/andrew-zacker.jpg'
 import Avery from '@/public/people/avery.jpg'
 import Bhanu from '@/public/people/bhanu.jpg'
@@ -15,7 +14,6 @@ import IrfanSener from '@/public/people/irfan-sener.jpg'
 import JonathanParra from '@/public/people/jonathan-parra.jpg'
 import Praneeth from '@/public/people/praneeth.jpg'
 import Sai from '@/public/people/sai.jpg'
-import Winston from '@/public/people/winston.jpg'
 import Yeonji from '@/public/people/yeonji.jpg'
 
 export const residents: Person[] = [
@@ -160,41 +158,6 @@ export const residents: Person[] = [
     location: 'India'
   },
   {
-    name: 'Winston Iskandar',
-    image: Winston,
-    url: 'https://x.com/WinstonIsk',
-    twitter: 'https://x.com/WinstonIsk',
-    github: 'https://github.com/winstoniskandar',
-    linkedin: 'https://www.linkedin.com/in/winstoniskandar',
-    description: (
-      <>
-        Stanford CS student &amp; Co-Founder of{' '}
-        <Link href='https://similate.ai/' target='_blank' className='link'>
-          Similate.ai
-        </Link>
-        , a simulation platform for human behavior.
-      </>
-    ),
-    location: 'USA'
-  },
-  {
-    name: 'Alex Zhang',
-    image: AlexZhang,
-    url: 'https://x.com/alexzhang104',
-    twitter: 'https://x.com/alexzhang104',
-    linkedin: 'https://www.linkedin.com/in/zhangalexanderx',
-    description: (
-      <>
-        Stanford CS student &amp; Co-Founder of{' '}
-        <Link href='https://similate.ai/' target='_blank' className='link'>
-          Similate.ai
-        </Link>
-        , a simulation platform for human behavior.
-      </>
-    ),
-    location: 'USA'
-  },
-  {
     name: 'Praneeth Pike',
     image: Praneeth,
     url: 'https://x.com/praneethpike',
@@ -246,10 +209,13 @@ export const residents: Person[] = [
     description: (
       <>
         Co-Founder of{' '}
-        <Link href='https://www.starpop.ai/' target='_blank' className='link'>
+        <Link href='https://starpop.ai/?utm_source=hackerresidency' target='_blank' className='link'>
           Starpop
         </Link>
-        , AI UGC videos, $15k MRR.
+        , a platform to make AI content, $15k MRR. 
+        Also runs <Link href='https://aiflowchat.com/?utm_source=hackerresidency' target='_blank' className='link'>
+          AI Flow Chat
+        </Link> an AI canvas for content creators and marketers, $3K MRR.
       </>
     ),
     location: 'Denmark'
@@ -264,10 +230,10 @@ export const residents: Person[] = [
     description: (
       <>
         Co-Founder of{' '}
-        <Link href='https://www.starpop.ai/' target='_blank' className='link'>
+        <Link href='https://starpop.ai/?utm_source=hackerresidency' target='_blank' className='link'>
           Starpop
         </Link>
-        , AI UGC videos, $15k MRR.
+        , a platform to make AI content, $15k MRR. 
       </>
     ),
     location: 'Switzerland'
