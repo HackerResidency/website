@@ -174,7 +174,8 @@ export const residents: Person[] = [
         >
           RabbitHoles.ai
         </Link>
-        , a canvas-based UX for genAI with over $100k in revenue. Previously ran a product agency, and been chief designer for many startups.
+        , a canvas-based UX for genAI with over $100k in revenue. Previously ran
+        a product agency, and been chief designer for many startups.
       </>
     ),
     location: 'India'
@@ -208,13 +209,22 @@ export const residents: Person[] = [
     description: (
       <>
         Co-Founder of{' '}
-        <Link href='https://starpop.ai/?utm_source=hackerresidency' target='_blank' className='link'>
+        <Link
+          href='https://starpop.ai/?utm_source=hackerresidency'
+          target='_blank'
+          className='link'
+        >
           Starpop
         </Link>
-        , a platform to make AI content, $15k MRR. 
-        Also runs <Link href='https://aiflowchat.com/?utm_source=hackerresidency' target='_blank' className='link'>
+        , a platform to make AI content, $15k MRR. Also runs{' '}
+        <Link
+          href='https://aiflowchat.com/?utm_source=hackerresidency'
+          target='_blank'
+          className='link'
+        >
           AI Flow Chat
-        </Link> an AI canvas for content creators and marketers, $3K MRR.
+        </Link>{' '}
+        an AI canvas for content creators and marketers, $3K MRR.
       </>
     ),
     location: 'Denmark'
@@ -229,10 +239,14 @@ export const residents: Person[] = [
     description: (
       <>
         Co-Founder of{' '}
-        <Link href='https://starpop.ai/?utm_source=hackerresidency' target='_blank' className='link'>
+        <Link
+          href='https://starpop.ai/?utm_source=hackerresidency'
+          target='_blank'
+          className='link'
+        >
           Starpop
         </Link>
-        , a platform to make AI content, $15k MRR. 
+        , a platform to make AI content, $15k MRR.
       </>
     ),
     location: 'Switzerland'
