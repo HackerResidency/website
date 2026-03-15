@@ -85,7 +85,7 @@ export const residents: Person[] = [
     location: 'Poland'
   },
   {
-    name: 'Avery',
+    name: 'Avery Gan',
     image: Avery,
     url: 'https://x.com/averycode',
     twitter: 'https://x.com/averycode',
@@ -95,13 +95,13 @@ export const residents: Person[] = [
       <>
         Psych major turned indie hacker; building{' '}
         <Link href='https://offscript.sh/' target='_blank' className='link'>
-          Offscript
+          Go Offscript
         </Link>{' '}
-        dev agency and{' '}
+        software studio and{' '}
         <Link href='https://rankd.dev' target='_blank' className='link'>
           Rankd
         </Link>
-        , ASO optimization. Ex Apple/HubSpot.
+        , ASO tool. Ex Apple/HubSpot.
       </>
     ),
     location: 'Singapore'
