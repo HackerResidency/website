@@ -1,8 +1,9 @@
-import { MeshDistortMaterial, Shadow, useGLTF } from '@react-three/drei'
+import { Shadow, useGLTF } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'
 import React, { useRef } from 'react'
 import * as THREE from 'three'
 
+import { MeshDistortMaterial } from './mesh-distort-material'
 import { state } from './state'
 import { Text } from './text'
 
@@ -10,6 +11,7 @@ export function Geo(props: any) {
   const group = useRef<THREE.Group>(null)
   const shadow = useRef<any>(null)
   const { nodes } = useGLTF('/geo.min.glb', true)
+  const geoMesh = nodes.geo as THREE.Mesh
 
   useFrame(({ clock }) => {
     if (!group.current) return
@@ -34,26 +36,32 @@ export function Geo(props: any) {
 
   return (
     <group {...props} dispose={null}>
-      <group ref={group}>
-        <mesh geometry={nodes.geo?.geometry} castShadow receiveShadow>
-          <MeshDistortMaterial
-            color='#ffffff'
-            flatShading
-            roughness={1}
-            metalness={0.5}
-            factor={15}
-            speed={5}
-          />
-        </mesh>
+      {/* <pointLight position={[0, 0, 0]} intensity={100} /> */}
 
-        <mesh geometry={nodes.geo?.geometry}>
-          <meshBasicMaterial wireframe />
-        </mesh>
+      <group ref={group}>
+        {geoMesh?.geometry && (
+          <>
+            <mesh geometry={geoMesh.geometry} castShadow receiveShadow>
+              {/* <meshBasicMaterial color='hotpink' transparent={true} opacity={0.5} /> */}
+
+              <MeshDistortMaterial
+                color='hotpink'
+                transparent={true}
+                opacity={0.5}
+                speed={5}
+              />
+            </mesh>
+
+            <mesh geometry={geoMesh.geometry}>
+              <meshBasicMaterial wireframe transparent={true} opacity={0.8} />
+            </mesh>
+          </>
+        )}
       </group>
 
       <group position={[1.25, -0.5, 0]}>
         <Text
-          position={[0, 0, 0]}
+          position={[0.2, 0, 0]}
           fontSize={0.07}
           lineHeight={1}
           letterSpacing={-0.05}
@@ -64,9 +72,9 @@ export function Geo(props: any) {
 
         <Text
           bold
-          position={[-0.01, -0.1, 0]}
+          position={[0.2, -0.1, 0]}
           fontSize={0.1}
-          lineHeight={1}
+          lineHeight={1.3}
           letterSpacing={-0.05}
           color='black'
         >

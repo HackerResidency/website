@@ -2,7 +2,6 @@
 
 import { Line, Loader, useAspect } from '@react-three/drei'
 import { Canvas, useFrame, useLoader, useThree } from '@react-three/fiber'
-import { Box, Flex, useFlexSize } from '@react-three/flex'
 import React, {
   Suspense,
   useCallback,
@@ -14,6 +13,7 @@ import React, {
 import * as THREE from 'three'
 
 import { Effects } from '@/components/three-text/effects'
+import { Box, Flex, useFlexSize } from '@/components/three-text/flex'
 import { Geo } from '@/components/three-text/geo'
 import { state } from '@/components/three-text/state'
 import { Text } from '@/components/three-text/text'
@@ -32,7 +32,7 @@ function Page({
   onReflow,
   left = false
 }: any) {
-  const textures = useLoader(THREE.TextureLoader, images)
+  const textures = useLoader(THREE.TextureLoader, images) as THREE.Texture[]
   const { viewport } = useThree()
   const boxProps = {
     centerAnchor: true,
@@ -116,7 +116,7 @@ function Page({
   )
 }
 
-function Layercard({
+function LayerCard({
   depth,
   boxWidth,
   boxHeight,
@@ -204,8 +204,17 @@ function Content({ onReflow }: any) {
   })
 
   const handleReflow = useCallback(
-    (w: number, h: number) =>
-      onReflow((state.pages = h / viewport.height + 5.5)),
+    (w: number, h: number) => {
+      // console.log('reflow', {
+      //   w,
+      //   h,
+      //   viewportWidth: viewport.width,
+      //   viewportHeight: viewport.height,
+      //   pages: state.pages
+      // })
+
+      onReflow((state.pages = h / viewport.height + 5.5))
+    },
     [onReflow, viewport.height]
   )
   const sizesRef = useRef<number[]>([])
@@ -272,7 +281,7 @@ function Content({ onReflow }: any) {
           justify='center'
         >
           <Box>
-            <Layercard
+            <LayerCard
               {...state.depthbox[0]}
               text={state.depthbox[1]!.text}
               boxWidth={bW}
@@ -280,6 +289,7 @@ function Content({ onReflow }: any) {
               map={texture}
               textScaleFactor={scale}
             />
+
             <Geo position={[bW / 2, -bH / 2, state.depthbox[1]!.depth]} />
           </Box>
         </Box>
@@ -294,49 +304,51 @@ const onScroll = (e: any) => {
   }
 }
 
-export default function App() {
+export default function TestPage() {
   const scrollArea = useRef<HTMLDivElement>(null)
-  useEffect(() => void onScroll({ target: scrollArea.current }), [])
+  useEffect(() => void onScroll({ currentTarget: scrollArea.current }), [])
   const [pages, setPages] = useState(0)
+
   return (
     <>
-      <Canvas
-        shadows
-        // raycaster={{ enabled: false }}
-        dpr={[1, 2]}
-        camera={{ position: [0, 0, 10], far: 1000 }}
-        gl={{
-          powerPreference: 'high-performance',
-          alpha: false,
-          antialias: false,
-          stencil: false,
-          depth: false
-        }}
-        onCreated={({ gl }) => gl.setClearColor('#f5f5f5')}
-      >
-        <pointLight position={[-10, -10, -10]} intensity={1} />
+      <div className='fixed top-0 left-0 w-screen h-screen!'>
+        <Canvas
+          shadows
+          dpr={[1, 2]}
+          camera={{ position: [0, 0, 10], far: 1000 }}
+          gl={{
+            powerPreference: 'high-performance',
+            alpha: false,
+            antialias: false,
+            stencil: false,
+            depth: false
+          }}
+          onCreated={({ gl }) => gl.setClearColor('#f5f5f5')}
+        >
+          <pointLight position={[-10, -10, -10]} intensity={1} />
 
-        <ambientLight intensity={0.4} />
+          <ambientLight intensity={0.4} />
 
-        <spotLight
-          castShadow
-          angle={0.3}
-          penumbra={1}
-          position={[0, 10, 20]}
-          intensity={5}
-          shadow-mapSize-width={1024}
-          shadow-mapSize-height={1024}
-        />
+          <spotLight
+            castShadow
+            angle={0.3}
+            penumbra={1}
+            position={[0, 10, 20]}
+            intensity={5}
+            shadow-mapSize-width={1024}
+            shadow-mapSize-height={1024}
+          />
 
-        <Suspense fallback={null}>
-          <Content onReflow={setPages} />
-        </Suspense>
+          <Suspense fallback={null}>
+            <Content onReflow={setPages} />
+          </Suspense>
 
-        <Effects />
-      </Canvas>
+          <Effects />
+        </Canvas>
+      </div>
 
       <div
-        className='scrollArea'
+        className='absolute top-0 left-0 w-full h-screen overflow-auto'
         ref={scrollArea}
         onScroll={onScroll}
         onPointerMove={(e) =>
@@ -346,7 +358,7 @@ export default function App() {
           ])
         }
       >
-        <div style={{ height: `${pages * 100}vh` }} />
+        <div style={{ width: '100%', height: `${pages * 100}vh` }} />
       </div>
 
       <Loader />

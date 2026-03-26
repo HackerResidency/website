@@ -52,7 +52,7 @@ export const state = {
       points: [
         [-20, 0, 0],
         [-9, 0, 0]
-      ],
+      ] as [number, number, number][],
       color: 'black',
       lineWidth: 0.5
     },
@@ -60,7 +60,7 @@ export const state = {
       points: [
         [20, 0, 0],
         [9, 0, 0]
-      ],
+      ] as [number, number, number][],
       color: 'black',
       lineWidth: 0.5
     }

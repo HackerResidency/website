@@ -1,6 +1,7 @@
 import { Text as TextImpl } from '@react-three/drei'
-import { useReflow } from '@react-three/flex'
 import React from 'react'
+
+import { useReflow } from '@/components/three-text/flex'
 
 export function Text({
   bold = false,
@@ -10,7 +11,7 @@ export function Text({
   ...props
 }: any) {
   const reflow = useReflow()
-  const font = bold ? '/Inter-Bold.woff' : '/Inter-Regular.woff'
+  const font = bold ? '/fonts/Inter-Bold.woff' : '/fonts/Inter-Regular.woff'
 
   return (
     <TextImpl
