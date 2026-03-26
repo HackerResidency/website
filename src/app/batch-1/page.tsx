@@ -2,12 +2,12 @@
 
 import Link from 'next/link'
 
+import { Background } from '@/components/background'
 import { Card } from '@/components/card'
 import { HeroButton } from '@/components/hero-button'
 import { ImageGallery } from '@/components/image-gallery'
 import { PeopleGrid } from '@/components/people-grid'
 import { Sponsor } from '@/components/sponsor'
-import { AnimatedGradientBackground } from '@/components/ui/animated-gradient-background'
 import { WorldMap } from '@/components/ui/world-map'
 import Villa0 from '@/public/da-nang-villa-legos/0.jpg'
 import Villa1 from '@/public/da-nang-villa-legos/1.jpg'
@@ -29,7 +29,7 @@ const villaImages = [
 export default function Batch0Page() {
   return (
     <>
-      <AnimatedGradientBackground />
+      <Background />
 
       <section className='relative z-10 w-full flex flex-col gap-32 pt-8 flex-1 justify-center '>
         <div className='flex flex-col w-full gap-8 max-w-3xl justify-center'>

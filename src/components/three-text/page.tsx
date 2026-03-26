@@ -288,7 +288,11 @@ function Content({ onReflow }: any) {
   )
 }
 
-const onScroll = (e: any) => (state.top = e.currentTarget.scrollTop)
+const onScroll = (e: any) => {
+  if (e.currentTarget) {
+    state.top = e.currentTarget.scrollTop
+  }
+}
 
 export default function App() {
   const scrollArea = useRef<HTMLDivElement>(null)

@@ -6,6 +6,7 @@ minimumReleaseAgeExclude:
   - '@fisch0920/config'
 
 onlyBuiltDependencies:
+  - canvas
   - sharp
   - simple-git-hooks
 

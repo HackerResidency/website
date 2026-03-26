@@ -3,16 +3,16 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
+import { Background } from '@/components/background'
 import { Card } from '@/components/card'
 import { HeroButton } from '@/components/hero-button'
-import { AnimatedGradientBackground } from '@/components/ui/animated-gradient-background'
 import HeroImageBatch0 from '@/public/da-nang-villa/hero.jpg'
 import HeroImageBatch1 from '@/public/da-nang-villa-legos/0.jpg'
 
 export default function Batch0Page() {
   return (
     <>
-      <AnimatedGradientBackground />
+      <Background />
 
       <section className='relative z-10 w-full flex flex-col gap-24 py-4 flex-1 justify-center '>
         <div className='flex flex-col w-full gap-8 max-w-3xl justify-center'>

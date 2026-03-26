@@ -1,6 +1,6 @@
 'use client'
 
-import { useTheme } from 'next-themes'
+// import { useTheme } from 'next-themes'
 import { useEffect, useState } from 'react'
 import { UnicornScene } from 'unicornstudio-react/next'
 
@@ -45,8 +45,9 @@ export function RaycastAnimatedBackground({
 } = {}) {
   const { width, height } = useWindowSize()
   const [isMounted, setIsMounted] = useState(false)
-  const { resolvedTheme } = useTheme()
-  const isDarkMode = resolvedTheme === 'dark'
+  // const { resolvedTheme } = useTheme()
+  // const isDarkMode = resolvedTheme === 'dark'
+  const isDarkMode = true
 
   useEffect(() => {
     if (!isMounted) {

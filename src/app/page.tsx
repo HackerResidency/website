@@ -2,8 +2,8 @@
 
 import { useRef } from 'react'
 
+import { Background } from '@/components/background'
 import { ImageGallery } from '@/components/image-gallery'
-import { AnimatedGradientBackground } from '@/components/ui/animated-gradient-background'
 import Villa0 from '@/public/da-nang-villa-legos/0.jpg'
 import Villa1 from '@/public/da-nang-villa-legos/1.jpg'
 import Villa2 from '@/public/da-nang-villa-legos/6.jpg'
@@ -25,7 +25,7 @@ const featuredImages = [
 export default function TheBestDamnLandingPageEver() {
   return (
     <>
-      <AnimatedGradientBackground />
+      <Background />
 
       <HeroSection />
 

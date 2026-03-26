@@ -8,10 +8,9 @@
       }
     ],
     "rootDir": ".",
-    "baseUrl": ".",
     "paths": {
-      "@/public/*": ["public/*"],
-      "@/*": ["src/*"]
+      "@/public/*": ["./public/*"],
+      "@/*": ["./src/*"]
     }
   },
   "include": [
