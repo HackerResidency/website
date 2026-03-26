@@ -4,7 +4,7 @@ import createGlobe from 'cobe'
 import { useEffect, useRef } from 'react'
 import { useSpring } from 'react-spring'
 
-import { useTheme } from '@/app/hooks/use-theme'
+import { useTheme } from '@/hooks/use-theme'
 import { cn } from '@/lib/utils'
 
 export function Globe({ className }: { className?: string }) {

@@ -6,7 +6,7 @@ import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { NotionRenderer } from 'react-notion-x'
 
-import { useTheme } from '@/app/hooks/use-theme'
+import { useTheme } from '@/hooks/use-theme'
 import * as config from '@/lib/config'
 
 export function NotionBlock({
